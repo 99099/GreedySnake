@@ -8,7 +8,7 @@ int main()
     GameInterface::drawInterface();
     Food* food = new Food();
     Snake* snake = new Snake();
-    food->setFood();
+    food->setFood(snake->getSnake());
     food->drawFood();
     snake->drawSnake();
     while (true) {

@@ -68,7 +68,7 @@ void Snake::getFood(Food *food)
 {
 	if (*food->getPos() == this->snake[0])
 	{
-		food->setFood();
+		food->setFood(this->snake);
 		food->drawFood();
 		int size = this->snake.size();
 		if (this->snake[size - 1].getX() == this->snake[size - 2].getX()) 
